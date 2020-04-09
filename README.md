@@ -1,5 +1,6 @@
 # ZXingCustomControl
 SAPUI5 /UI5 Custom Control for ZXing BarcodeReader Library 
+ZXing Lib: https://github.com/zxing-js/library
 
 # In das eigene Projekt übernehmen
 
@@ -37,8 +38,8 @@ this.camera.startQRReader(function(scanResult){
 }.bind(this));	
 ```
 
-3. Nachdem Scannen wird die Kamera automatisch wieder beendet. 
-4. Wenn das Control in einem Dialog geschlossen wird, sollte der laufende Stream beendet werden
+* Nachdem Scannen wird die Kamera automatisch wieder beendet. 
+* Wenn das Control in einem Dialog geschlossen wird, sollte der laufende Stream beendet werden
 
 ```
 this.camera.stopStream();

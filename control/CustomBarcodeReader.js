@@ -68,6 +68,7 @@ sap.ui.define([
 				}.bind(this));	
 		},
 
+        //deprecated
 		getAvailableDevices: function (fSuccesCallback, fErrorCallback) {
 			this.barcodeReader = new ZXing.BrowserBarcodeReader();
 			this.barcodeReader.getVideoInputDevices().then(function (aDevices) {
@@ -92,6 +93,7 @@ sap.ui.define([
 			}
 		},
 
+        //deprecated
 		connectToDevice: function (fSuccesCallback,fErrorCallback) {
 			this.barcodeReader.decodeOnceFromVideoDevice(undefined,"video").then(function (result) {
 				if (fSuccesCallback) {
